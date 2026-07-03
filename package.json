@@ -1,6 +1,6 @@
 {
   "name": "@grafikr/sanity-plugin-color-picker",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Sanity Studio input plugin for picking colors and gradients.",
   "keywords": [
     "sanity",

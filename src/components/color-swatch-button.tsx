@@ -21,7 +21,7 @@ type ColorSwatchButtonProps = {
 };
 
 export const ColorSwatchButton = forwardRef<
-  HTMLDivElement,
+  HTMLButtonElement,
   ColorSwatchButtonProps
 >(({ swatchBackground, empty, valueLabel, onClick, readOnly, id }, ref) => (
   <Card

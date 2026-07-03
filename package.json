@@ -1,27 +1,75 @@
 {
   "name": "@grafikr/sanity-plugin-color-picker",
   "version": "0.0.0",
-  "private": true,
+  "description": "A Sanity Studio input plugin for picking colors and gradients.",
+  "keywords": [
+    "sanity",
+    "sanity-plugin",
+    "color",
+    "color-picker",
+    "gradient"
+  ],
+  "license": "MIT",
+  "author": "Grafikr",
   "type": "module",
+  "packageManager": "pnpm@11.1.2",
+  "sideEffects": false,
+  "browserslist": "extends @sanity/browserslist-config",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
+    "build": "pkg-utils build --strict --check --clean",
+    "watch": "pkg-utils watch --strict",
     "typecheck": "tsc --noEmit",
-    "lint": "pnpx @biomejs/biome lint --write",
-    "format": "pnpx @biomejs/biome format --write",
-    "check": "pnpx @biomejs/biome check --write"
+    "lint": "biome lint --write",
+    "format": "biome format --write",
+    "check": "biome check .",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "@sanity/icons": "^4.1.0",
+    "@sanity/ui": "^3.3.0",
     "@uiw/react-color": "^2.10.3",
     "colord": "^2.9.3"
   },
   "devDependencies": {
-    "@sanity/icons": "3.7.4",
-    "@sanity/ui": "3.2.0",
-    "@types/react": "^19.2.14",
+    "@biomejs/biome": "^2.5.2",
+    "@sanity/browserslist-config": "^1.0.5",
+    "@sanity/pkg-utils": "^10.9.0",
+    "@types/react": "^19.2.17",
     "react": "19.2.7",
     "sanity": "6.3.0",
-    "typescript": "^5"
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "sanity": "^6"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs",
+        "default": "./dist/index.js"
+      },
+      "./package.json": "./package.json"
+    }
   }
 }

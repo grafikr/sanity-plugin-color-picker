@@ -1,7 +1,6 @@
 # @grafikr/sanity-plugin-color-picker
 
-A Sanity Studio input plugin for picking colors and gradients, with alpha
-channel support.
+A Sanity Studio input plugin for picking colors and gradients.
 
 ## Features
 

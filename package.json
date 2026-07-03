@@ -60,7 +60,7 @@
     "sanity": "^6"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.12"
   },
   "publishConfig": {
     "exports": {

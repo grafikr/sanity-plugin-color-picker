@@ -1,4 +1,4 @@
-# sanity-plugin-color-picker
+# @grafikr/sanity-plugin-color-picker
 
 A Sanity Studio input plugin for picking colors and gradients, with alpha
 channel support.
@@ -15,7 +15,7 @@ channel support.
 ## Installation
 
 ```sh
-npm install sanity-plugin-color-picker
+npm install @grafikr/sanity-plugin-color-picker
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ Add it to your `sanity.config.ts` plugins:
 
 ```ts
 import { defineConfig } from 'sanity';
-import { colorPickerInput } from 'sanity-plugin-color-picker';
+import { colorPickerInput } from '@grafikr/sanity-plugin-color-picker';
 
 export default defineConfig({
   // ...

@@ -1,5 +1,5 @@
 {
-  "name": "sanity-plugin-color-picker",
+  "name": "@grafikr/sanity-plugin-color-picker",
   "version": "0.0.0",
   "private": true,
   "type": "module",

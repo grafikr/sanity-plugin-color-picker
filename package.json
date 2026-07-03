@@ -1,0 +1,27 @@
+{
+  "name": "sanity-plugin-color-picker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpx @biomejs/biome lint --write",
+    "format": "pnpx @biomejs/biome format --write",
+    "check": "pnpx @biomejs/biome check --write"
+  },
+  "dependencies": {
+    "@uiw/react-color": "^2.10.3",
+    "colord": "^2.9.3"
+  },
+  "devDependencies": {
+    "@sanity/icons": "3.7.4",
+    "@sanity/ui": "3.2.0",
+    "@types/react": "^19.2.14",
+    "react": "19.2.7",
+    "sanity": "6.3.0",
+    "typescript": "^5"
+  }
+}

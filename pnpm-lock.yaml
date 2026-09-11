@@ -19,7 +19,7 @@ importers:
         version: 2.10.3(@babel/runtime@7.29.7)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       colord:
         specifier: ^2.9.3
-        version: 2.9.3
+        version: 2.9.4
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.2
@@ -2272,6 +2272,7 @@ packages:
   '@sanity/pkg-utils@10.9.0':
     resolution: {integrity: sha512-xqoZsUMDVcEjNoXUOvztBhfwDquOLlMPIqhL0U44eFx74E6bp+GwtdUhdhaxMCjQX74fgu871fq974dOh4qjZg==}
     engines: {node: '>=20.19 <22 || >=22.12'}
+    deprecated: 'UNSUPPORTED: Versions before v11 are no longer maintained or updated and will not receive fixes. Upgrade to @sanity/pkg-utils v11.'
     hasBin: true
     peerDependencies:
       babel-plugin-react-compiler: '*'
@@ -3034,8 +3035,8 @@ packages:
   color2k@2.0.3:
     resolution: {integrity: sha512-zW190nQTIoXcGCaU08DvVNFTmQhUpnJfVuAKfWqUQkflXKpaDdpaYoM0iluLS9lgJNHyBF58KKA2FBEwkD7wog==}
 
-  colord@2.9.3:
-    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
+  colord@2.9.4:
+    resolution: {integrity: sha512-z0nTt5300AIviCn9FTEL4G2DzPkfEDfghx6Do0ZfM3u0rOINBtfw2H8lD4VXyZF/o8HTzzyiCztaG2X/+IMeZA==}
 
   colors-named-hex@1.0.4:
     resolution: {integrity: sha512-X+Enw/2fFAgDRhUac69cRO/RJvHnWDBBrP8J1sJuEU16Buiiu8PPpJP4abSo0V+fJbkfwmQITE6zKx/SBJERGw==}
@@ -3086,6 +3087,7 @@ packages:
   cron-parser@4.9.0:
     resolution: {integrity: sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q==}
     engines: {node: '>=12.0.0'}
+    deprecated: v4 is no longer maintained, upgrade to v5
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -8819,7 +8821,7 @@ snapshots:
 
   color2k@2.0.3: {}
 
-  colord@2.9.3: {}
+  colord@2.9.4: {}
 
   colors-named-hex@1.0.4: {}
 
